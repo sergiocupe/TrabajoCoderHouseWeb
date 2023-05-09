@@ -1,86 +1,177 @@
-/**********************************************************************************/
-/***************************** Por Etiquetas  *************************************/
-/**********************************************************************************/
+/*#region BODY ---------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  font-family: "Roboto", sans-serif;
 }
 
-/**********************************************************************************/
-/******************************** Por ID ******************************************/
-/**********************************************************************************/
-
-/*Estilos para HEADER*/
-.frameSup {
-  text-align: center;
-  background-color: rgb(224, 227, 228);
-  height: 120px;
-  padding: 20px;
-}
-
-.menu {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-weight: bold;
-}
-.menu li {
-  display: inline-block;
-  text-align: center;
-}
-.menu li a {
-  padding: 20px;
-  margin: 10px;
+a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  display: inline-block;
 }
-.menu li a:hover {
+
+a:hover {
   color: #ff6600;
 }
 
-#logoMenu {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+/*#endregion*/
+
+/*#region Grid para el container Home ---------------------------------------------------- */
+.gridContainerHome {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    "slides slides slides slides"
+    "tituloVehiculo tituloVehiculo tituloVehiculo tituloVehiculo"
+    "vehiculo1 vehiculo2 vehiculo3 vehiculo4"
+    "tituloCalidad tituloCalidad tituloCalidad tituloCalidad"
+    "imgCalidad textoCalidad textoCalidad textoCalidad"
+    "seccionFooter seccionFooter seccionFooter seccionFooter"
+    "copyright copyright copyright copyright";
 }
 
-#itemMenu {
-  display: inline-block;
-  width: 70%;
+.slides {
+  padding: 10px;
+  grid-area: slides;
 }
 
-#redesMenu {
-  display: inline-block;
+.tituloVehiculo {
+  grid-area: tituloVehiculo;
+}
+
+.vehiculo1 {
   text-align: center;
-  vertical-align: middle;
+  grid-area: vehiculo1;
+}
+
+.vehiculo2 {
+  text-align: center;
+  grid-area: vehiculo2;
+}
+
+.vehiculo3 {
+  text-align: center;
+  grid-area: vehiculo3;
+}
+
+.vehiculo4 {
+  text-align: center;
+  grid-area: vehiculo4;
+}
+
+.tituloCalidad {
+  grid-area: tituloCalidad;
+}
+
+.imgCalidad {
+  justify-self: center;
+  grid-area: imgCalidad;
+}
+
+.textoCalidad {
+  line-height: 1.5rem;
+  justify-self: start;
+  padding-right: 5rem;
+  grid-area: textoCalidad;
+}
+
+.seccionFooter {
+  display: grid;
+  background-color: rgb(224, 227, 228);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-area: seccionFooter;
+}
+
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 15px;
+}
+/*#endregion*/
+
+/*#region PARA EL HEADER ---------------------------------------------------- */
+
+/*********** Frame Superior ***********/
+.logo {
+  width: 200px;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*********** Estilos para Menu - Flex ***********/
+.menuNavFlex {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(224, 227, 228);
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 50px;
+}
+
+.linkMenu {
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.linkMenu:hover {
+  color: #ff6600;
+}
+
+.linkImgMenu {
+  padding: 3px;
+}
+
+.redesMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
 }
 
 .imgRedes {
-  margin-right: 10px;
-  width: 35px;
+  width: 25px;
 }
+/*#endregion*/
 
-/*Estilos para INDEX*/
-.slide {
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
+/*#region para el main de la Home---------------------------------------------------- */
 
+/* Seccion de Vehiculos Destacados*/
 .iconoHome {
   width: 25px;
   vertical-align: middle;
 }
 
 .tituloVehiculoHome {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ff6600;
   text-align: center;
@@ -94,15 +185,22 @@ body {
 }
 
 .textoVehiculoHome {
-  font-size: 1em;
+  font-size: 1rem;
   color: #000;
   font-weight: normal;
   text-align: center;
   margin: 10px;
 }
 
+/* Seccion de Calidad*/
+
+.imgCal {
+  width: 300px;
+  padding-bottom: 10px;
+}
+
 .tituloCalidadHome {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ff6600;
   text-align: center;
@@ -111,101 +209,226 @@ body {
 }
 
 .textoCalidadHome {
-  font-size: 1em;
+  font-size: 1rem;
   color: #000;
   font-weight: normal;
   margin: 10px;
 }
 
+/*Estilos para TABLA VEHICULOS*/
+.fichaVehiculo {
+  display: inline-block;
+  text-align: center;
+  border: solid 2px #3066be;
+  border-radius: 5%;
+  padding: 5px;
+  height: 300px;
+}
+
+.imgVehiculo {
+  width: 100%;
+  height: 150px;
+}
+
+.precioVehiculo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3066be;
+}
+
+.datosVehiculo {
+  color: black;
+  font-size: 0.9rem;
+}
+
 /*Estilos para LAS SECCIONES*/
+
+.tituloSeccion {
+  grid-area: tituloSeccion;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+  padding-left: 50px;
+}
 
 .iconoSeccion {
   width: 35px;
   vertical-align: middle;
 }
 
-.tituloSeccion {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ff6600;
-  text-align: left;
-  vertical-align: middle;
-  margin: 10px;
+/*#region Grid para el container Quienes somos ---------------------------------------------------- */
+.gridContainerQuienesSomos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "tituloSeccion tituloSeccion tituloSeccion"
+    "videoQuienesSomos textoQuienesSomos textoQuienesSomos"
+    "fotoQuienesSomos fotoQuienesSomos fotoQuienesSomos"
+    "seccionFooter seccionFooter seccionFooter"
+    "copyright copyright copyright";
 }
 
-.textoNosotros {
-  font-size: 1em;
-  color: #000;
-  font-weight: normal;
-  margin: 40px;
+.videoQuienesSomos {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  grid-area: videoQuienesSomos;
 }
 
-.imgNosotros {
-  text-align: center;
+.textoQuienesSomos {
+  grid-area: textoQuienesSomos;
+  font-size: 1rem;
+  padding-right: 250px;
+  line-height: 1.5rem;
+}
+
+.fotoQuienesSomos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-area: fotoQuienesSomos;
 }
 
 .fotoNosotros {
   width: 350px;
-  vertical-align: middle;
-  display: inline-block;
   padding: 40px;
 }
 
-.textoContactenos {
-  font-size: 1em;
+/*#region Grid para el container Vehiculos ---------------------------------------------------- */
+.gridContainerVehiculos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "tituloSeccion"
+    "textoVehiculos"
+    "listadoVehiculos"
+    "seccionFooter"
+    "copyright";
+}
+
+.textoVehiculos {
+  grid-area: textoVehiculos;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 50px;
+}
+
+.listadoVehiculos {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/*#region Grid para el container Sucursales ---------------------------------------------------- */
+.gridContainerSucursales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "tituloSeccion tituloSeccion tituloSeccion"
+    "textoSucursales textoSucursales textoSucursales"
+    "sucursales sucursales sucursales"
+    "seccionFooter seccionFooter seccionFooter"
+    "copyright copyright copyright";
+}
+
+.textoSucursales {
+  grid-area: textoSucursales;
+  font-size: 1rem;
   color: #000;
   font-weight: normal;
-  margin: 10px;
-}
-
-.link {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-/*Estilos para TABLA VEHICULOS*/
-.fichaVehiculo {
-  text-align: center;
-  width: 220px;
-  border-top: solid 2px #000;
-  border-right: solid 2px #000;
-  border-bottom: solid 2px#000;
-  border-left: solid 2px #000;
-  padding: 5px 5px 5px 5px;
-  height: 280px;
-}
-
-.datosVehiculo {
-  color: #ff6600;
+  padding-left: 50px;
 }
 
 .sucursales {
+  grid-area: sucursales;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
   margin: 20px;
 }
+
 .tituloSucursal {
+  font-size: 0.9rem;
   font-weight: bold;
+}
+
+.descripcionSucursal {
+  font-size: 0.9rem;
+}
+
+.cuadroSucursal {
+  padding: 5px;
+  border: solid 2px #3066be;
+  border-radius: 5%;
+  width: 310px;
+  text-align: center;
+}
+
+/*#region Grid para el container Contactenos ---------------------------------------------------- */
+.gridContainerContactenos {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header header"
+    "tituloSeccion tituloSeccion"
+    "textoContactenos textoContactenos"
+    "fotoContactenos formContactenos"
+    "seccionFooter seccionFooter"
+    "copyright copyright";
+}
+
+.textoContactenos {
+  font-size: 1rem;
+  padding-left: 50px;
+  grid-area: textoContactenos;
+}
+
+.fotoContactenos {
+  grid-area: fotoContactenos;
+  justify-self: center;
+  align-self: center;
+}
+
+.imgContactenos {
+  width: 250px;
+}
+
+.formContactenos {
+  grid-area: formContactenos;
 }
 
 /*Estilo para los formularios*/
 .formContacto {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   border: #000 solid 1px;
-  text-align: center;
-  position: relative;
-}
-.campoForm {
-  text-align: left;
-  padding: 10px;
-  width: 400px;
-  display: inline-block;
+  border-radius: 5%;
+  padding: 20px;
 }
 
-/*Estilos para PIE DE PAGINA*/
-.piePagina {
-  background-color: rgb(224, 227, 228);
-  margin: 20px auto;
-  text-align: center;
+/*#endregion*/
+
+/*#region PARA EL PIE DE PAGINA  ---------------------------------------------------- */
+.itemsFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-around;
 }
 
 .imgPiePagina {
@@ -222,34 +445,298 @@ body {
   font-size: 14px;
 }
 
-#seccionFooter1 {
-  color: #000;
-  display: inline-block;
-  width: 300px;
-  margin: 40px;
-}
-
-#seccionFooter2 {
-  display: inline-block;
-  width: 300px;
-  margin: 40px;
-}
-
-#seccionFooter3 {
-  color: #000;
-  display: inline-block;
-  width: 300px;
-  margin: 40px;
-}
-
-#seccionFooter4 {
-  display: inline-block;
-  width: 300px;
-  margin: 40px;
-}
-
-.copyright {
+.seccionFooter1 {
   text-align: center;
-  font-size: 12px;
-  margin: 15px;
+  width: 300px;
+  margin: 40px;
 }
+
+.seccionFooter2 {
+  text-align: center;
+  width: 300px;
+  margin: 40px;
+}
+
+.seccionFooter3 {
+  text-align: center;
+  width: 300px;
+  margin: 40px;
+}
+
+.seccionFooter4 {
+  text-align: center;
+  width: 300px;
+  margin: 40px;
+}
+/*#endregion*/
+
+/***********************************************************************************/
+/*#region PARA PARA EL RESPONSIVE MOBILE  ---------------------------------------------------- */
+
+/* Responsive para Mobile */
+@media only screen and (max-width: 768px) {
+  .gridContainerHome {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+      "header header"
+      "slides slides"
+      "tituloVehiculo tituloVehiculo"
+      "vehiculo1 vehiculo2"
+      "vehiculo3 vehiculo4"
+      "tituloCalidad tituloCalidad"
+      "imgCalidad imgCalidad"
+      "textoCalidad textoCalidad"
+      "seccionFooter seccionFooter" "seccionFooter seccionFooter"
+      "copyright copyright";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(10, auto);
+    grid-auto-flow: row;
+  }
+
+  .gridContainerQuienesSomos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    gap: 20px;
+    grid-template-areas:
+      "header header header"
+      "tituloSeccion tituloSeccion tituloSeccion"
+      "videoQuienesSomos videoQuienesSomos videoQuienesSomos"
+      "textoQuienesSomos textoQuienesSomos textoQuienesSomos"
+      "fotoQuienesSomos fotoQuienesSomos fotoQuienesSomos"
+      "seccionFooter seccionFooter seccionFooter"
+      "copyright copyright copyright";
+  }
+
+  .gridContainerSucursales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    grid-template-areas:
+      "header header header"
+      "tituloSeccion tituloSeccion tituloSeccion"
+      "textoSucursales textoSucursales textoSucursales"
+      "sucursales sucursales sucursales"
+      "seccionFooter seccionFooter seccionFooter"
+      "copyright copyright copyright";
+  }
+
+  .gridContainerContactenos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .navLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+  }
+
+  .linkMenu {
+    text-decoration: none;
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+  }
+
+  .imgRedes {
+    width: 15px;
+  }
+
+  .tituloSeccion {
+    font-size: 1rem;
+  }
+
+  .iconoSeccion {
+    width: 25px;
+  }
+
+  /* Seccion de Vehiculos Destacados*/
+
+  .iconoHome {
+    width: 15px;
+    vertical-align: middle;
+  }
+
+  .tituloVehiculoHome {
+    font-size: 0.5rem;
+  }
+
+  .textoVehiculoHome {
+    font-size: 0.6rem;
+  }
+
+  /* Seccion de Calidad*/
+
+  .imgCal {
+    width: 150px;
+  }
+
+  .tituloCalidadHome {
+    font-size: 0.5rem;
+  }
+
+  .textoCalidad {
+    font-size: 0.6rem;
+    justify-self: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* Estilos para la tabla de vehiculos*/
+  .fichaVehiculo {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    border: solid 2px #3066be;
+    border-radius: 5%;
+    height: 220px;
+  }
+
+  .imgVehiculo {
+    width: 120px;
+    height: 80px;
+  }
+
+  .precioVehiculo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3066be;
+  }
+
+  .datosVehiculo {
+    color: #3066be;
+    font-size: 0.7rem;
+  }
+
+  /* Estilos para seccion Quienes Somos*/
+
+  .textoQuienesSomos {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+
+  .fotoNosotros {
+    width: 120px;
+    padding: 10px;
+  }
+
+  /*#Estilos para Vehiculos ---------------------------------------------------- */
+  .textoVehiculos {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
+
+  /*#Estilos para Sucursales ---------------------------------------------------- */
+
+  .textoSucursales {
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .sucursales {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .cuadroSucursal {
+    margin: 15px;
+  }
+
+  .tituloSucursal {
+    font-size: 0.7rem;
+  }
+
+  .descripcionSucursal {
+    font-size: 0.7rem;
+  }
+
+  /*#Estilos para Contactenos ---------------------------------------------------- */
+
+  .textoContactenos {
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fotoContactenos {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .imgContactenos {
+    width: 120px;
+  }
+
+  /*Estilo para los formularios*/
+  .formContactenos {
+    padding-left: 30px;
+    width: 90%;
+  }
+
+  .formContacto {
+    width: 100%;
+  }
+
+  /*Estilos para PIE DE PAGINA*/
+
+  .seccionFooter {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: rgb(224, 227, 228);
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .imgPiePagina {
+    margin-right: 5px;
+    width: 15px;
+  }
+
+  .tituloPie {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+
+  .contenidoPie {
+    font-size: 0.6rem;
+  }
+
+  .seccionFooter1 {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .seccionFooter2 {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .seccionFooter3 {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .seccionFooter4 {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+    margin: 10px;
+  }
+}
+/*#endregion*/

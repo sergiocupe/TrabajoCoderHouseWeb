@@ -5,133 +5,250 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Consecionario CoderSur</title>
   </head>
   <body>
-    <header>
-      <!--CABECERA ACA SE ENCUENTRA EL FRAME SUPERIOR CON EL LOGO, BOTONERA Y REDES SOCIALES-->
-      <section class="frameSup">
-        <article id="logoMenu">
-          <a href="../index.html" target="_parent"
-            ><img src="../img/logo.png" alt="frame" width="200px" alt="logo"
-          /></a>
-        </article>
-        <article id="itemMenu">
-          <nav>
-            <ul class="menu">
-              <li>
-                <a href="../index.html" target="_parent">INICIO</a>
-              </li>
-              <li>
-                <a href="../pages/quienessomos.html" target="_parent"
-                  >QUIENES SOMOS</a
-                >
-              </li>
-              <li>
-                <a href="../pages/vehiculos.html" target="_parent">VEHICULOS</a>
-              </li>
-              <li>
-                <a href="../pages/sucursales.html" target="_parent"
-                  >SUCURSALES</a
-                >
-              </li>
-              <li>
-                <a href="../pages/contactenos.html" target="_parent"
-                  >CONTACTENOS</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </article>
-        <article id="redesMenu">
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="../img/facebook.png" alt="facebook" class="imgRedes"
-          /></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><img src="../img/instagram.png" alt="instagram" class="imgRedes"
-          /></a>
-          <a href="https://www.twitter.com" target="_blank"
-            ><img src="../img/twitter.png" alt="twitter" class="imgRedes"
-          /></a>
-        </article>
+    <div class="gridContainerSucursales">
+      <header class="header">
+        <!--CABECERA ACA SE ENCUENTRA EL FRAME SUPERIOR CON EL LOGO, BOTONERA Y REDES SOCIALES-->
+        <nav class="menuNavFlex">
+          <div class="logoMenu">
+            <!--logo es  el primer hijo de nav-->
+            <a href="../index.html" target="_parent" class="linkMenu"
+              ><img src="../img/logo.png" alt="frame" class="logo" alt="logo"
+            /></a>
+          </div>
+          <ul class="navLinks" id="navLinks">
+            <li>
+              <a href="../index.html" target="_parent" class="linkMenu"
+                >INICIO</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/quienessomos.html"
+                target="_parent"
+                class="linkMenu"
+                >QUIENES SOMOS</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/vehiculos.html"
+                target="_parent"
+                class="linkMenu"
+                >VEHICULOS</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/sucursales.html"
+                target="_parent"
+                class="linkMenu"
+                >SUCURSALES</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/contactenos.html"
+                target="_parent"
+                class="linkMenu"
+                >CONTACTENOS</a
+              >
+            </li>
+            <li>
+              <section class="redesMenu">
+                <div class="linkImgMenu">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="linkImgMenu"
+                    ><img
+                      src="../img/facebook.png"
+                      alt="facebook"
+                      class="imgRedes"
+                  /></a>
+                </div>
+                <div class="linkImgMenu">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    class="linkImgMenu"
+                    ><img
+                      src="../img/instagram.png"
+                      alt="instagram"
+                      class="imgRedes"
+                  /></a>
+                </div>
+                <div class="linkImgMenu">
+                  <a href="https://www.twitter.com" target="_blank"
+                    ><img
+                      src="../img/twitter.png"
+                      alt="twitter"
+                      class="imgRedes"
+                  /></a>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="tituloSeccion">
+        <!--TITULO SECCION-->
+        <img
+          src="../img/iconoSucursales.png"
+          alt="icono Sucursales"
+          class="iconoSeccion"
+        />
+        NUESTRAS SUCURSALES
       </section>
-    </header>
-    <main>
-      <!--TITULO SECCION-->
+      <section class="textoSucursales">
+        Nuestra red cuenta con varias sucursales, por ello te presentamos el
+        listado de cada una de ellas donde encontraras nuestras direcciones,
+        horarios y datos de contacto.<br />
+        ¡Te esperamos en nuestras sucursales de CODERSUR!
+      </section>
       <section class="sucursales">
-        <article class="tituloSeccion">
-          <img
-            src="../img/iconoSucursales.png"
-            alt="iconoSucursales"
-            class="iconoSeccion"
-          />
-          SUCURSALES
-        </article>
-        <article>
+        <article class="cuadroSucursal">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167163314!2d-58.38644132307371!3d-34.60373880321857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1681609152563!5m2!1ses-419!2sar"
-            width="400"
-            height="300"
+            width="300"
+            height="200"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <br /><br />
+          <div>
+            <span class="tituloSucursal">Sucursal:</span>
+            <span class="descripcionSucursal">Casa Central</span><br />
+            <span class="tituloSucursal">Direccion:</span>
+            <span class="descripcionSucursal"
+              >Av. 9 de Julio 200 - Capital Federal - Buenos Aires -
+              Argentina</span
+            ><br />
+            <span class="tituloSucursal">Telefono:</span>
+            <span class="descripcionSucursal">4000-8767</span><br />
+            <span class="tituloSucursal">Horario:</span>
+            <span class="descripcionSucursal">9:00 a 18:00 hrs</span>
+          </div>
         </article>
-        <br />
-        <article>
-          <span class="tituloSucursal">Sucursal:</span> Casa Central<br />
-          <span class="tituloSucursal">Direccion:</span> Av. 9 de Julio 200 -
-          Capital Federal - Buenos Aires - Argentina<br />
-          <span class="tituloSucursal">Telefono:</span> 4000-8767<br />
-          <span class="tituloSucursal">Horario:</span> 9:00 a 18:00 hrs
+        <article class="cuadroSucursal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9065280347577!2d-58.3934463234657!3d-34.7075374629899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2304c40089%3A0x7fafac9e3e9126d6!2zTGFuw7pz!5e0!3m2!1ses!2sar!4v1682994663841!5m2!1ses!2sar"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br /><br />
+          <div>
+            <span class="tituloSucursal">Sucursal:</span>
+            <span class="descripcionSucursal">Lanus Oeste</span><br />
+            <span class="tituloSucursal">Direccion:</span>
+            <span class="descripcionSucursal"
+              >Av. Hipolito Yrigoyen 5600 - Lanus Oeste - Buenos Aires -
+              Argentina</span
+            ><br />
+            <span class="tituloSucursal">Telefono:</span>
+            <span class="descripcionSucursal">5000-3498</span><br />
+            <span class="tituloSucursal">Horario:</span>
+            <span class="descripcionSucursal">9:00 a 18:00 hrs</span>
+          </div>
+        </article>
+        <article class="cuadroSucursal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.393478071397!2d-58.594295823468286!3d-34.644764559668566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78445131cc1%3A0x4e7194a403f10e3b!2sHaedo!5e0!3m2!1ses!2sar!4v1682994789678!5m2!1ses!2sar"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br /><br />
+          <div>
+            <span class="tituloSucursal">Sucursal:</span>
+            <span class="descripcionSucursal">Haedo Oeste</span><br />
+            <span class="tituloSucursal">Direccion:</span>
+            <span class="descripcionSucursal"
+              >Carlos Tejedor 7841 - Haedo - Buenos Aires - Argentina</span
+            ><br />
+            <span class="tituloSucursal">Telefono:</span>
+            <span class="descripcionSucursal">6098-1000</span><br />
+            <span class="tituloSucursal">Horario:</span>
+            <span class="descripcionSucursal">9:00 a 18:00 hrs</span>
+          </div>
         </article>
       </section>
-    </main>
-    <footer>
-      <!--PIE DE LA PAGINA-->
-      <section class="piePagina">
-        <div id="seccionFooter1">
-          <span class="tituloPie">Portofolio Web</span><br />
-          <span class="contenidoPie">Sergio Castillo Legal</span>
-        </div>
-        <div id="seccionFooter2">
-          <span class="tituloPie">Redes Sociales</span><br />
-          <a href="https://www.facebook.com" target="_blank"
-            ><img src="../img/facebook.png" alt="facebook" class="imgPiePagina"
-          /></a>
-          <a href="https://www.instagram.com"
-            ><img
-              src="../img/instagram.png"
-              target="_blank"
-              alt="instagram"
-              class="imgPiePagina"
-          /></a>
-          <a href="https://www.twitter.com" target="_blank"
-            ><img src="../img/twitter.png" alt="twitter" class="imgPiePagina"
-          /></a>
-        </div>
-        <div id="seccionFooter3">
-          <span class="tituloPie">Sucursal Principal</span><br />
-          <span class="contenidoPie"
-            >Av. L. N. Alem 890, Capital Federal<br />
-            Argentina</span
-          >
-        </div>
-        <div id="seccionFooter4">
-          <span class="tituloPie">Contacto</span><br />
-          <span class="contenidoPie"
-            >4956-0000<br />
-            <a href="mailto:concesionariacodersur@codersur.com.ar">
-              concesionariacodersur@codersur.com.ar</a
-            ></span
-          >
-        </div>
-      </section>
+      <footer class="seccionFooter">
+        <section class="itemsFooter">
+          <article class="seccionFooter1">
+            <span class="tituloPie">Portofolio Web</span><br />
+            <span class="contenidoPie">Sergio Castillo Legal</span>
+          </article>
+          <article class="seccionFooter2">
+            <span class="tituloPie">Nuestras Redes Sociales</span><br />
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="../img/facebook.png"
+                alt="facebook"
+                class="imgPiePagina"
+            /></a>
+            <a href="https://www.instagram.com"
+              ><img
+                src="../img/instagram.png"
+                target="_blank"
+                alt="instagram"
+                class="imgPiePagina"
+            /></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><img src="../img/twitter.png" alt="twitter" class="imgPiePagina"
+            /></a>
+          </article>
+          <article class="seccionFooter3">
+            <span class="tituloPie">Sucursal Principal</span><br />
+            <span class="contenidoPie"
+              >Av. L. N. Alem 890, Capital Federal<br />
+              Argentina</span
+            >
+          </article>
+          <article class="seccionFooter4">
+            <span class="tituloPie">Contacto</span><br />
+            <span class="contenidoPie"
+              >4956-0000<br />
+              <a href="mailto:admin@codersur.com.ar">
+                admin@codersur.com.ar</a
+              ></span
+            >
+          </article>
+        </section>
+      </footer>
       <section class="copyright">
         Todos los derechos reservados 2023 Ⓒ Castillo Legal Sergio
       </section>
-    </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
