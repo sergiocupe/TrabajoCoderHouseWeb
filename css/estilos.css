@@ -1,0 +1,255 @@
+/**********************************************************************************/
+/***************************** Por Etiquetas  *************************************/
+/**********************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+/**********************************************************************************/
+/******************************** Por ID ******************************************/
+/**********************************************************************************/
+
+/*Estilos para HEADER*/
+.frameSup {
+  text-align: center;
+  background-color: rgb(224, 227, 228);
+  height: 120px;
+  padding: 20px;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+.menu li a {
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+.menu li a:hover {
+  color: #ff6600;
+}
+
+#logoMenu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#itemMenu {
+  display: inline-block;
+  width: 70%;
+}
+
+#redesMenu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imgRedes {
+  margin-right: 10px;
+  width: 35px;
+}
+
+/*Estilos para INDEX*/
+.slide {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.iconoHome {
+  width: 25px;
+  vertical-align: middle;
+}
+
+.tituloVehiculoHome {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff6600;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.listaVehiculoHome {
+  text-align: center;
+  margin: 20px;
+}
+
+.textoVehiculoHome {
+  font-size: 1em;
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px;
+}
+
+.tituloCalidadHome {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff6600;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.textoCalidadHome {
+  font-size: 1em;
+  color: #000;
+  font-weight: normal;
+  margin: 10px;
+}
+
+/*Estilos para LAS SECCIONES*/
+
+.iconoSeccion {
+  width: 35px;
+  vertical-align: middle;
+}
+
+.tituloSeccion {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff6600;
+  text-align: left;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.textoNosotros {
+  font-size: 1em;
+  color: #000;
+  font-weight: normal;
+  margin: 40px;
+}
+
+.imgNosotros {
+  text-align: center;
+}
+
+.fotoNosotros {
+  width: 350px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 40px;
+}
+
+.textoContactenos {
+  font-size: 1em;
+  color: #000;
+  font-weight: normal;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/*Estilos para TABLA VEHICULOS*/
+.fichaVehiculo {
+  text-align: center;
+  width: 220px;
+  border-top: solid 2px #000;
+  border-right: solid 2px #000;
+  border-bottom: solid 2px#000;
+  border-left: solid 2px #000;
+  padding: 5px 5px 5px 5px;
+  height: 280px;
+}
+
+.datosVehiculo {
+  color: #ff6600;
+}
+
+.sucursales {
+  margin: 20px;
+}
+.tituloSucursal {
+  font-weight: bold;
+}
+
+/*Estilo para los formularios*/
+.formContacto {
+  width: 500px;
+  border: #000 solid 1px;
+  text-align: center;
+  position: relative;
+}
+.campoForm {
+  text-align: left;
+  padding: 10px;
+  width: 400px;
+  display: inline-block;
+}
+
+/*Estilos para PIE DE PAGINA*/
+.piePagina {
+  background-color: rgb(224, 227, 228);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.imgPiePagina {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.tituloPie {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contenidoPie {
+  font-size: 14px;
+}
+
+#seccionFooter1 {
+  color: #000;
+  display: inline-block;
+  width: 300px;
+  margin: 40px;
+}
+
+#seccionFooter2 {
+  display: inline-block;
+  width: 300px;
+  margin: 40px;
+}
+
+#seccionFooter3 {
+  color: #000;
+  display: inline-block;
+  width: 300px;
+  margin: 40px;
+}
+
+#seccionFooter4 {
+  display: inline-block;
+  width: 300px;
+  margin: 40px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin: 15px;
+}
