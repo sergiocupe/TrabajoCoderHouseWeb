@@ -102,7 +102,8 @@ a:hover {
 
 /*********** Frame Superior ***********/
 .logo {
-  width: 200px;
+  padding-left: 100px;
+  width: 300px;
 }
 
 .header {
@@ -114,23 +115,15 @@ a:hover {
 }
 
 /*********** Estilos para Menu - Flex ***********/
-.menuNavFlex {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(224, 227, 228);
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0px;
+
+
+.itemMenuNav {
+  display: inline-block;
+  padding-top: 10px;
 }
 
-.navLinks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-  align-items: center;
-  padding: 50px;
+.item-menu {
+  padding-right: 30px;
 }
 
 .linkMenu {
@@ -146,15 +139,7 @@ a:hover {
 }
 
 .linkImgMenu {
-  padding: 3px;
-}
-
-.redesMenu {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  align-content: center;
-  justify-content: flex-end;
+  padding: 10px;
 }
 
 .imgRedes {
@@ -530,25 +515,18 @@ a:hover {
   }
 
   .logo {
-    width: 100px;
-  }
-
-  .navLinks {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 5px;
+    padding-left: 0px;
+    width: 150px;
   }
 
   .linkMenu {
     text-decoration: none;
-    font-size: 8px;
+    font-size: 0.7rem;
     color: rgb(0, 0, 0);
   }
 
   .imgRedes {
-    width: 15px;
+    width: 20px;
   }
 
   .tituloSeccion {
