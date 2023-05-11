@@ -145,6 +145,11 @@ a:hover {
 .imgRedes {
   width: 25px;
 }
+
+.navFondo
+{
+  background-color: rgb(224, 227, 228);
+}
 /*#endregion*/
 
 /*#region para el main de la Home---------------------------------------------------- */
