@@ -1,0 +1,124 @@
+/***********************************************************************************/
+/*#region PARA PARA EL RESPONSIVE MOBILE  ---------------------------------------------------- */
+/* Responsive para Mobile */
+@media only screen and (max-width: $widthMedia) {
+  header {
+    .navbar {
+      .logo {
+        padding-left: 0px;
+        width: 150px;
+      }
+      .item-menu {
+        .linkMenu {
+          font-size: 0.7rem;
+        }
+      }
+      .itemMenuImgNav {
+        .linkImgMenu {
+          .imgRedes {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+  .tituloSeccion {
+    font-size: 1rem;
+  }
+  .iconoSeccion {
+    width: 25px;
+  }
+  /* Seccion de Vehiculos Destacados*/
+  .iconoHome {
+    width: 15px;
+    vertical-align: middle;
+  }
+  .tituloHome {
+    font-size: 1rem;
+  }
+  .textoHome {
+    font-size: 0.8rem;
+  }
+  /* Seccion de Calidad*/
+  .imgCal {
+    width: 150px;
+    padding-bottom: 15px;
+  }
+  /* Estilos para la tabla de vehiculos*/
+  .precioVehiculo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $colorAzul;
+  }
+  .datosVehiculo {
+    color: $colorAzul;
+    font-size: 0.7rem;
+  }
+  /* Estilos para seccion Quienes Somos*/
+  .textoQuienesSomos {
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+    
+  .fotoNosotros {
+    width: 250px;
+  }
+  
+  /*#Estilos para Vehiculos ---------------------------------------------------- */
+  .textoVehiculos {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  /*#Estilos para Sucursales ---------------------------------------------------- */
+  .textoSucursales {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .tituloSucursal {
+    font-size: 0.8rem;
+  }
+  .descripcionSucursal {
+    font-size: 0.8rem;
+  }
+  /*#Estilos para Contactenos ---------------------------------------------------- */
+  .textoContactenos {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fotoContactenos {
+    justify-self: center;
+    align-self: center;
+  }
+  .imgContactenos {
+    width: 120px;
+  }
+  /*Estilo para los formularios*/
+  .formContactenos {
+    padding-left: 30px;
+    width: 90%;
+  }
+  .formContacto {
+    width: 100%;
+  }
+  /*Estilos para PIE DE PAGINA*/
+  .seccionFooter {
+    background-color: $colorGris;
+  }
+  .imgPiePagina {
+    margin-right: 5px;
+    width: 15px;
+  }
+  .tituloPie {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .contenidoPie {
+    font-size: 0.8rem;
+  }
+  .copyright {
+    font-size: 0.5rem;
+  }
+}
+/*#endregion*/

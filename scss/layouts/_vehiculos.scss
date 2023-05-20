@@ -1,0 +1,25 @@
+.fichaVehiculo {
+  padding-top: 20px;
+}
+
+.terminosCondiciones {
+  font-size: 0.9rem;
+}
+
+.precioVehiculo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $colorAzul;
+}
+
+.datosVehiculo {
+  color: $colorNegro;
+  font-size: 0.9rem;
+}
+
+.textoVehiculos {
+  grid-area: textoVehiculos;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 50px;
+}

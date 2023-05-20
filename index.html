@@ -24,289 +24,694 @@
       );
 
       const carousel = new bootstrap.Carousel(myCarouselElement, {
-        interval: 20,
+        interval: 12,
         touch: false,
       });
     </script>
-    <title>Concesionario CoderSur</title>
+    <title>Consecionario CoderSur</title>
   </head>
   <body>
-    <div class="gridContainerHome">
-      <header class="header">
-        <!--CABECERA ACA SE ENCUENTRA EL FRAME SUPERIOR CON EL LOGO, BOTONERA Y REDES SOCIALES-->
-        <nav
-          class="navbar navbar-expand-lg navFondo"
-        >
-          <div class="container-fluid">
-            <a href="./index.html" target="_parent" class="navbar-brand linkMenu"
-              ><img src="./img/logo.png" alt="frame" class="logo" alt="logo"
-            /></a>
+    <header class="header">
+      <!--CABECERA ACA SE ENCUENTRA EL FRAME SUPERIOR CON EL LOGO, BOTONERA Y REDES SOCIALES-->
+      <nav
+        class="navbar navbar-expand-lg"
+      >
+        <div class="container-fluid">
+          <a href="./index.html" target="_parent" class="navbar-brand linkMenu"
+            ><img src="./img/logo.png" alt="frame" class="logo" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item item-menu">
+                <a
+                  class="nav-link linkMenu"
+                  aria-current="page"
+                  href="./index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a
+                  class="nav-link linkMenu"
+                  aria-current="page"
+                  href="./pages/quienessomos.html"
+                  >QUIENES SOMOS</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a
+                  class="nav-link linkMenu"
+                  aria-current="page"
+                  href="./pages/vehiculos.html"
+                  >VEHICULOS</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a
+                  class="nav-link linkMenu"
+                  aria-current="page"
+                  href="./pages/sucursales.html"
+                  >SUCURSALES</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a
+                  class="nav-link linkMenu"
+                  aria-current="page"
+                  href="./pages/contactenos.html"
+                  >CONTACTENOS</a
+                >
+              </li>
+              <li class="nav-item itemMenuImgNav">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="linkImgMenu"
+                  ><img
+                    src="./img/facebook.png"
+                    alt="facebook"
+                    class="imgRedes"
+                /></a>
+              </li>
+              <li class="nav-item itemMenuImgNav">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="linkImgMenu"
+                  ><img
+                    src="./img/instagram.png"
+                    alt="instagram"
+                    class="imgRedes"
+                /></a>
+              </li>
+              <li class="nav-item itemMenuImgNav">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  class="linkImgMenu"
+                  ><img src="./img/twitter.png" alt="twitter" class="imgRedes"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel m-auto"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/slide.png"
+                  class="d-block w-100"
+                  alt="Slide 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/slide1.png"
+                  class="d-block w-100"
+                  alt="Slide 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/slide2.png"
+                  class="d-block w-100"
+                  alt="Slide 3"
+                />
+              </div>
+            </div>
             <button
-              class="navbar-toggler"
+              class="carousel-control-prev"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                <li class="nav-item item-menu">
-                  <a
-                    class="nav-link linkMenu"
-                    aria-current="page"
-                    href="./index.html"
-                    >INICIO</a
-                  >
-                </li>
-                <li class="nav-item item-menu">
-                  <a
-                    class="nav-link linkMenu"
-                    aria-current="page"
-                    href="./pages/quienessomos.html"
-                    >QUIENES SOMOS</a
-                  >
-                </li>
-                <li class="nav-item item-menu">
-                  <a
-                    class="nav-link linkMenu"
-                    aria-current="page"
-                    href="./pages/vehiculos.html"
-                    >VEHICULOS</a
-                  >
-                </li>
-                <li class="nav-item item-menu">
-                  <a
-                    class="nav-link linkMenu"
-                    aria-current="page"
-                    href="./pages/sucursales.html"
-                    >SUCURSALES</a
-                  >
-                </li>
-                <li class="nav-item item-menu">
-                  <a
-                    class="nav-link linkMenu"
-                    aria-current="page"
-                    href="./pages/contactenos.html"
-                    >CONTACTENOS</a
-                  >
-                </li>
-                <li class="nav-item itemMenuNav">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    class="linkImgMenu"
-                    ><img
-                      src="./img/facebook.png"
-                      alt="facebook"
-                      class="imgRedes"
-                  /></a>
-                </li>
-                <li class="nav-item itemMenuNav">
-                  <a
-                    href="https://www.instagram.com"
-                    target="_blank"
-                    class="linkImgMenu"
-                    ><img
-                      src="./img/instagram.png"
-                      alt="instagram"
-                      class="imgRedes"
-                  /></a>
-                </li>
-                <li class="nav-item itemMenuNav">
-                  <a
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    class="linkImgMenu"
-                    ><img src="./img/twitter.png" alt="twitter" class="imgRedes"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <section class="slides">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
             <button
+              class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/slide.png" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./img/slide1.png" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./img/slide2.png" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
-      <section class="tituloVehiculo">
-        <article class="tituloVehiculoHome">
+      <section class="row seccionHome">
+        <div class="col-12 mt-5 text-center tituloHome">
           <img src="img/tilde.png" alt="iconoTilde" class="iconoHome" />
           VEHICULOS DESTACADOS
-        </article>
-        <article class="textoVehiculoHome">
+        </div>
+        <div class="col-12 m-3 textoHome">
           En CODERSUR encontraras una amplia variedad de vehículos. Si estás
           buscando un vehículo nuevo, no dudes en visitar nuestra web y
           descubrir todas las opciones que tenemos disponibles...
-        </article>
-      </section>
-      <section class="vehiculo1">
-        <div class="fichaVehiculo">
-          <img src="./vehiculos/auto1.jpg" alt="Vehiculo" class="imgVehiculo" />
-          <br />
-          <span class="precioVehiculo">$ 3.700.000</span><br />
-          <span class="datosVehiculo">Marca: CHREVROLET</span><br />
-          <span class="datosVehiculo">Modelo: 1.4 LS JOY</span><br />
-          <span class="datosVehiculo">KM-Año: 80.000 KM - 2018</span>
         </div>
       </section>
-      <section class="vehiculo2">
-        <div class="fichaVehiculo">
-          <img src="./vehiculos/auto2.jpg" alt="Vehiculo" class="imgVehiculo" />
-          <br />
-          <span class="precioVehiculo">$ 4.200.000</span><br />
-          <span class="datosVehiculo">Marca: RENAULT</span><br />
-          <span class="datosVehiculo">Modelo: Sandero AUTHENTIQUE</span><br />
-          <span class="datosVehiculo">KM-Año: 70.000 KM - 2015</span>
+      <section class="row">
+        <div
+          class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center fichaVehiculo"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="./vehiculos/auto1.jpg"
+              class="card-img-top"
+              alt="Vehiculo"
+            />
+            <div class="card-body">
+              <h5 class="card-title precioVehiculo">$ 3.700.000</h5>
+              <p class="card-text datosVehiculo">
+                Marca: CHREVROLET<br />
+                Modelo: 1.4 LS JOY<br />
+                KM-Año: 80.000 KM - 2018
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalVehiculo1"
+              >
+                Ver Detalle
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ModalVehiculo1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title fs-5 text-center"
+                        id="exampleModalLabel"
+                      >
+                        DETALLE DEL VEHICULO SELECCIONADO
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="card-title precioVehiculo">$ 3.700.000</h5>
+                      <br />
+                      Marca: CHREVROLET<br />
+                      Modelo: 1.4 LS JOY<br />
+                      KM-Año: 80.000 KM - 2018<br /><br />
+                      <span class="terminosCondiciones">
+                        DEVOLUCIÓN SIN CARGO - PERÍODO DE PRUEBA DE 7 DÍAS o 300
+                        KM: No te damos sólo un test drive: te damos 7 días de
+                        prueba. Si no te encantó ¡te devolvemos tu plata
+                        (incluida la transferencia)! *<br /><br />
+
+                        INSPECCIÓN Y COBERTURA MECÁNICA: En CoderSur, la calidad
+                        es lo más importante. Nuestros autos son mucho más que
+                        autos usados, son autos semi-nuevos que están chequeados
+                        en 240 puntos por nuestro equipo de expertos, tienen
+                        todos los servicios al día, kilometraje real y Cobertura
+                        Mecánica Kavak de 3 meses con posibilidad de extensión a
+                        1 año.<br /><br />
+
+                        RECIBÍ EL AUTO EN TU CASA Y PAGALO EN EL MOMENTO.
+                        Reservando Online te lo llevamos gratis a domicilio* con
+                        toda la documentación lista para circular. Si te gusta,
+                        lo pagás en el momento ¡y te lo quedás!<br />
+
+                        *MÉTODOS DE PAGO:<br />
+
+                        AL CONTADO: Pagá vía transferencia bancaria o deposito.
+                        ¡Consultanos para más información! Podés pagar en pesos
+                        o en dólares.
+                        <br />
+                        DEJÁ TU AUTO COMO PARTE DE PAGO: Cambiá tu auto por uno
+                        de calidad chequeada y con cobertura mecánica.
+                        <br />
+                        FINANCIAMOS TU COMPRA: Podés acceder a un auto chequeado
+                        con nuestro financiamiento. La entrada mínima y cuotas
+                        podés encontrarlas en nuestro simulador de financiación
+                        online.
+                      </span>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center fichaVehiculo"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="./vehiculos/auto2.jpg"
+              class="card-img-top"
+              alt="Vehiculo"
+            />
+            <div class="card-body">
+              <h5 class="card-title precioVehiculo">$ 4.200.000</h5>
+              <p class="card-text datosVehiculo">
+                Marca: RENAULT<br />
+                Modelo: Sandero AUTHENTIQUE<br />
+                KM-Año: 70.000 KM - 2015
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalVehiculo2"
+              >
+                Ver Detalle
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ModalVehiculo2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title fs-5 text-center"
+                        id="exampleModalLabel"
+                      >
+                        DETALLE DEL VEHICULO SELECCIONADO
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="card-title precioVehiculo">$4.200.000</h5>
+                      <br />
+                      Marca: RENAULT<br />
+                      Modelo: Sandero AUTHENTIQUE<br />
+                      KM-Año: 70.000 KM - 2015<br /><br />
+                      <span class="terminosCondiciones">
+                        DEVOLUCIÓN SIN CARGO - PERÍODO DE PRUEBA DE 7 DÍAS o 300
+                        KM: No te damos sólo un test drive: te damos 7 días de
+                        prueba. Si no te encantó ¡te devolvemos tu plata
+                        (incluida la transferencia)! *<br /><br />
+
+                        INSPECCIÓN Y COBERTURA MECÁNICA: En CoderSur, la calidad
+                        es lo más importante. Nuestros autos son mucho más que
+                        autos usados, son autos semi-nuevos que están chequeados
+                        en 240 puntos por nuestro equipo de expertos, tienen
+                        todos los servicios al día, kilometraje real y Cobertura
+                        Mecánica Kavak de 3 meses con posibilidad de extensión a
+                        1 año.<br /><br />
+
+                        RECIBÍ EL AUTO EN TU CASA Y PAGALO EN EL MOMENTO.
+                        Reservando Online te lo llevamos gratis a domicilio* con
+                        toda la documentación lista para circular. Si te gusta,
+                        lo pagás en el momento ¡y te lo quedás!<br />
+
+                        *MÉTODOS DE PAGO:<br />
+
+                        AL CONTADO: Pagá vía transferencia bancaria o deposito.
+                        ¡Consultanos para más información! Podés pagar en pesos
+                        o en dólares.
+                        <br />
+                        DEJÁ TU AUTO COMO PARTE DE PAGO: Cambiá tu auto por uno
+                        de calidad chequeada y con cobertura mecánica.
+                        <br />
+                        FINANCIAMOS TU COMPRA: Podés acceder a un auto chequeado
+                        con nuestro financiamiento. La entrada mínima y cuotas
+                        podés encontrarlas en nuestro simulador de financiación
+                        online.
+                      </span>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center fichaVehiculo"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="./vehiculos/auto3.jpg"
+              class="card-img-top"
+              alt="Vehiculo"
+            />
+            <div class="card-body">
+              <h5 class="card-title precioVehiculo">$ 4.200.000</h5>
+              <p class="card-text datosVehiculo">
+                Marca: RENAULT<br />
+                Modelo: Sandero Privilege 1.6<br />
+                KM-Año: 96.000 KM - 2015
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalVehiculo3"
+              >
+                Ver Detalle
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ModalVehiculo3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title fs-5 text-center"
+                        id="exampleModalLabel"
+                      >
+                        DETALLE DEL VEHICULO SELECCIONADO
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="card-title precioVehiculo">$ 3.500.000</h5>
+                      <br />
+                      Marca: RENAULT<br />
+                      Modelo: Sandero Privilege 1.6<br />
+                      KM-Año: 96.000 KM - 2015<br /><br />
+                      <span class="terminosCondiciones">
+                        DEVOLUCIÓN SIN CARGO - PERÍODO DE PRUEBA DE 7 DÍAS o 300
+                        KM: No te damos sólo un test drive: te damos 7 días de
+                        prueba. Si no te encantó ¡te devolvemos tu plata
+                        (incluida la transferencia)! *<br /><br />
+
+                        INSPECCIÓN Y COBERTURA MECÁNICA: En CoderSur, la calidad
+                        es lo más importante. Nuestros autos son mucho más que
+                        autos usados, son autos semi-nuevos que están chequeados
+                        en 240 puntos por nuestro equipo de expertos, tienen
+                        todos los servicios al día, kilometraje real y Cobertura
+                        Mecánica Kavak de 3 meses con posibilidad de extensión a
+                        1 año.<br /><br />
+
+                        RECIBÍ EL AUTO EN TU CASA Y PAGALO EN EL MOMENTO.
+                        Reservando Online te lo llevamos gratis a domicilio* con
+                        toda la documentación lista para circular. Si te gusta,
+                        lo pagás en el momento ¡y te lo quedás!<br />
+
+                        *MÉTODOS DE PAGO:<br />
+
+                        AL CONTADO: Pagá vía transferencia bancaria o deposito.
+                        ¡Consultanos para más información! Podés pagar en pesos
+                        o en dólares.
+                        <br />
+                        DEJÁ TU AUTO COMO PARTE DE PAGO: Cambiá tu auto por uno
+                        de calidad chequeada y con cobertura mecánica.
+                        <br />
+                        FINANCIAMOS TU COMPRA: Podés acceder a un auto chequeado
+                        con nuestro financiamiento. La entrada mínima y cuotas
+                        podés encontrarlas en nuestro simulador de financiación
+                        online.
+                      </span>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex align-items-center justify-content-center fichaVehiculo"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="./vehiculos/auto4.jpg"
+              class="card-img-top"
+              alt="Vehiculo"
+            />
+            <div class="card-body">
+              <h5 class="card-title precioVehiculo">$ 3.900.000</h5>
+              <p class="card-text datosVehiculo">
+                Marca: FIAT<br />
+                Modelo: MOBI WAY<br />
+                KM-Año: 65.000 KM - 2017
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalVehiculo4"
+              >
+                Ver Detalle
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="ModalVehiculo4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title fs-5 text-center"
+                        id="exampleModalLabel"
+                      >
+                        DETALLE DEL VEHICULO SELECCIONADO
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="card-title precioVehiculo">$ 3.900.000</h5>
+                      <br />
+                      Marca: FIAT<br />
+                      Modelo: MOBI WAY<br />
+                      KM-Año: 65.000 KM - 2017<br /><br />
+                      <span class="terminosCondiciones">
+                        DEVOLUCIÓN SIN CARGO - PERÍODO DE PRUEBA DE 7 DÍAS o 300
+                        KM: No te damos sólo un test drive: te damos 7 días de
+                        prueba. Si no te encantó ¡te devolvemos tu plata
+                        (incluida la transferencia)! *<br /><br />
+
+                        INSPECCIÓN Y COBERTURA MECÁNICA: En CoderSur, la calidad
+                        es lo más importante. Nuestros autos son mucho más que
+                        autos usados, son autos semi-nuevos que están chequeados
+                        en 240 puntos por nuestro equipo de expertos, tienen
+                        todos los servicios al día, kilometraje real y Cobertura
+                        Mecánica Kavak de 3 meses con posibilidad de extensión a
+                        1 año.<br /><br />
+
+                        RECIBÍ EL AUTO EN TU CASA Y PAGALO EN EL MOMENTO.
+                        Reservando Online te lo llevamos gratis a domicilio* con
+                        toda la documentación lista para circular. Si te gusta,
+                        lo pagás en el momento ¡y te lo quedás!<br />
+
+                        *MÉTODOS DE PAGO:<br />
+
+                        AL CONTADO: Pagá vía transferencia bancaria o deposito.
+                        ¡Consultanos para más información! Podés pagar en pesos
+                        o en dólares.
+                        <br />
+                        DEJÁ TU AUTO COMO PARTE DE PAGO: Cambiá tu auto por uno
+                        de calidad chequeada y con cobertura mecánica.
+                        <br />
+                        FINANCIAMOS TU COMPRA: Podés acceder a un auto chequeado
+                        con nuestro financiamiento. La entrada mínima y cuotas
+                        podés encontrarlas en nuestro simulador de financiación
+                        online.
+                      </span>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="vehiculo3">
-        <div class="fichaVehiculo">
-          <img src="./vehiculos/auto3.jpg" alt="Vehiculo" class="imgVehiculo" />
-          <br />
-          <span class="precioVehiculo">$ 3.500.000</span><br />
-          <span class="datosVehiculo">Marca: RENAULT</span><br />
-          <span class="datosVehiculo">Modelo: Sandero Privilege 1.6</span><br />
-          <span class="datosVehiculo">KM-Año: 96.000 KM - 2015</span>
+      <section class="row seccionHome">
+        <div class="col-12 mt-5 mb-4 text-center tituloHome">
+          <img src="img/calidad.png" alt="iconoCalidad" class="iconoHome" />
+          CALIDAD EN CODER SUR
         </div>
       </section>
-      <section class="vehiculo4">
-        <div class="fichaVehiculo">
-          <img src="./vehiculos/auto4.jpg" alt="Vehiculo" class="imgVehiculo" />
-          <br />
-          <span class="precioVehiculo">$ 3.900.000</span><br />
-          <span class="datosVehiculo">Marca: FIAT</span><br />
-          <span class="datosVehiculo">Modelo: MOBI WAY</span><br />
-          <span class="datosVehiculo">KM-Año: 65.000 KM - 2017</span>
+      <section class="row">
+        <div
+          class="col-xs-12 col-sm-12 col-md-5 col-lg-3 d-flex align-items-center justify-content-center"
+        >
+          <img src="img/calidad1.jpg" alt="imagenCalidad" class="imgCal" />
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-7 col-lg-9 d-flex align-items-center justify-content-center textoHome"
+        >
+          Los años y el avance de la tecnología nos dan la posibilidad de tener
+          la información al alcance de nuestras manos, en cualquier lugar y en
+          todo momento. Eso hace que las exigencias y conocimientos de los
+          clientes sean cada vez mayores, obligando a las empresas a
+          reinventarse constantemente para lograr satisfacer sus necesidades.
+          <br />Por este motivo desde Auto Generali decidimos formar un equipo
+          de Calidad que nos permita dar un salto y posicionarnos a la cabeza de
+          la red.<br />
+          Nuestra visión de la calidad se basa en “asegurar que no se producen
+          defectos en las líneas y que nunca se transmite ningún defecto al
+          siguiente proceso”. Nuestro objetivo es tener “cero defectos” en todos
+          los procesos de producción.
         </div>
       </section>
-      <section class="tituloCalidad tituloCalidadHome">
-        <img src="img/calidad.png" alt="iconoCalidad" class="iconoHome" />
-        CALIDAD EN CODER SUR
+    </main>
+    <footer class="container-fluid">
+      <section class="row mt-4 mb-4 seccionFooter text-center">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 p-5">
+          <span class="tituloPie">Portofolio Web</span><br />
+          <span class="contenidoPie">Sergio Castillo Legal</span>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 p-5">
+          <span class="tituloPie">Nuestras Redes Sociales</span><br />
+          <a href="https://www.facebook.com" target="_blank"
+            ><img src="./img/facebook.png" alt="facebook" class="imgPiePagina"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img
+              src="./img/instagram.png"
+              target="_blank"
+              alt="instagram"
+              class="imgPiePagina"
+          /></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><img src="./img/twitter.png" alt="twitter" class="imgPiePagina"
+          /></a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 p-5">
+          <span class="tituloPie">Sucursal Principal</span><br />
+          <span class="contenidoPie"
+            >Av. L. N. Alem 890, Capital Federal<br />
+            Argentina</span
+          >
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 p-5">
+          <span class="tituloPie">Contacto</span><br />
+          <span class="contenidoPie"
+            >4956-0000<br />
+            <a href="mailto:admin@codersur.com.ar">
+              admin@codersur.com.ar</a
+            ></span
+          >
+        </div>
       </section>
-      <section class="imgCalidad">
-        <img src="img/calidad1.jpg" alt="imagenCalidad" class="imgCal" />
+      <section class="row text-center">
+        <div class="col-12 copyright">
+          Todos los derechos reservados 2023 Ⓒ Castillo Legal Sergio
+        </div>
       </section>
-      <section class="textoCalidad">
-        Los años y el avance de la tecnología nos dan la posibilidad de tener la
-        información al alcance de nuestras manos, en cualquier lugar y en todo
-        momento. Eso hace que las exigencias y conocimientos de los clientes
-        sean cada vez mayores, obligando a las empresas a reinventarse
-        constantemente para lograr satisfacer sus necesidades.
-        <br />Por este motivo desde Auto Generali decidimos formar un equipo de
-        Calidad que nos permita dar un salto y posicionarnos a la cabeza de la
-        red.<br />
-        Nuestra visión de la calidad se basa en “asegurar que no se producen
-        defectos en las líneas y que nunca se transmite ningún defecto al
-        siguiente proceso”. Nuestro objetivo es tener “cero defectos” en todos
-        los procesos de producción.
-      </section>
-      <footer class="seccionFooter">
-        <section class="itemsFooter">
-          <article class="seccionFooter1">
-            <span class="tituloPie">Portofolio Web</span><br />
-            <span class="contenidoPie">Sergio Castillo Legal</span>
-          </article>
-          <article class="seccionFooter2">
-            <span class="tituloPie">Nuestras Redes Sociales</span><br />
-            <a href="https://www.facebook.com" target="_blank"
-              ><img
-                src="./img/facebook.png"
-                alt="facebook"
-                class="imgPiePagina"
-            /></a>
-            <a href="https://www.instagram.com"
-              ><img
-                src="./img/instagram.png"
-                target="_blank"
-                alt="instagram"
-                class="imgPiePagina"
-            /></a>
-            <a href="https://www.twitter.com" target="_blank"
-              ><img src="./img/twitter.png" alt="twitter" class="imgPiePagina"
-            /></a>
-          </article>
-          <article class="seccionFooter3">
-            <span class="tituloPie">Sucursal Principal</span><br />
-            <span class="contenidoPie"
-              >Av. L. N. Alem 890, Capital Federal<br />
-              Argentina</span
-            >
-          </article>
-          <article class="seccionFooter4">
-            <span class="tituloPie">Contacto</span><br />
-            <span class="contenidoPie"
-              >4956-0000<br />
-              <a href="mailto:admin@codersur.com.ar">
-                admin@codersur.com.ar</a
-              ></span
-            >
-          </article>
-        </section>
-      </footer>
-      <section class="copyright">
-        Todos los derechos reservados 2023 Ⓒ Castillo Legal Sergio
-      </section>
-    </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

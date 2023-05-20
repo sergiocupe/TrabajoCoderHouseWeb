@@ -1,0 +1,22 @@
+.seccionHome {
+  .iconoHome {
+    width: 25px;
+    vertical-align: middle;
+  }
+
+  .tituloHome {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $colorNaranja;
+  }
+
+  .textoHome {
+    font-size: 1rem;
+    color: #000;
+    font-weight: normal;
+  }
+
+  .imgCal {
+    width: 300px;
+  }
+}
