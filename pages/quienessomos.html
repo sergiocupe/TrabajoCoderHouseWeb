@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
       rel="stylesheet"
@@ -23,9 +24,7 @@
   <body>
     <header class="header">
       <!--CABECERA ACA SE ENCUENTRA EL FRAME SUPERIOR CON EL LOGO, BOTONERA Y REDES SOCIALES-->
-      <nav
-        class="navbar navbar-expand-lg"
-      >
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a href="../index.html" target="_parent" class="navbar-brand linkMenu"
             ><img src="../img/logo.png" alt="frame" class="logo" alt="logo"
@@ -162,21 +161,36 @@
         </div>
       </section>
       <section class="row text-center m-4">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div
+          class="col-xs-12 col-sm-6 col-md-4 col-lg-4"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-cubic"
+        >
           <img
             src="../img/nosotros1.jpg"
             alt="imagenNosotros1"
             class="fotoNosotros"
           />
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div
+          class="col-xs-12 col-sm-6 col-md-4 col-lg-4"
+          data-aos="flip-up"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out-cubic"
+        >
           <img
             src="../img/nosotros2.jpg"
             alt="imagenNosotros2"
             class="fotoNosotros"
           />
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div
+          class="col-xs-12 col-sm-6 col-md-4 col-lg-4"
+          data-aos="flip-up"
+          data-aos-duration="3000"
+          data-aos-easing="ease-out-cubic"
+        >
           <img
             src="../img/nosotros3.jpg"
             alt="imagenNosotros2"
@@ -235,5 +249,11 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+      });
+    </script>
   </body>
 </html>
