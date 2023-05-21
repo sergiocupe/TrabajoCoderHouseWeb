@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 body {
@@ -24,33 +24,32 @@ body {
   }
 
   .tituloSeccion {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $colorNaranja;
+    @include funcTitulo(1.5rem,$colorNaranja);
     padding-left: 50px;
   }
 
   .iconoSeccion {
     width: 40px;
   }
-}
 
-.seccionFooter {
-  background-color: $colorGris;
-}
+  .footer {
+    .seccionFooter {
+      background-color: $colorGris;
+    }
 
-.imgPiePagina {
-  margin-right: 10px;
-  width: 25px;
-}
+    .imgPiePagina {
+      margin-right: 10px;
+      width: 25px;
+    }
 
-.tituloPie {
-  font-size: 16px;
-  font-weight: bold;
-}
+    .tituloPie {
+      @include funcTitulo(1rem,$colorNegro);
+    }
 
-.contenidoPie {
-  font-size: 14px;
+    .contenidoPie {
+      font-size: 14px;
+    }
+  }
 }
 
 .copyright {

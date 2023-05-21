@@ -22,29 +22,26 @@ body a:hover {
 }
 body .tituloSeccion {
   font-size: 1.5rem;
-  font-weight: bold;
   color: #ff6600;
+  font-weight: bold;
   padding-left: 50px;
 }
 body .iconoSeccion {
   width: 40px;
 }
-
-.seccionFooter {
+body .footer .seccionFooter {
   background-color: #e0e3e4;
 }
-
-.imgPiePagina {
+body .footer .imgPiePagina {
   margin-right: 10px;
   width: 25px;
 }
-
-.tituloPie {
-  font-size: 16px;
+body .footer .tituloPie {
+  font-size: 1rem;
+  color: #000;
   font-weight: bold;
 }
-
-.contenidoPie {
+body .footer .contenidoPie {
   font-size: 14px;
 }
 
@@ -98,13 +95,14 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
 }
 .seccionHome .tituloHome {
   font-size: 1.5rem;
-  font-weight: bold;
   color: #ff6600;
+  font-weight: bold;
 }
 .seccionHome .textoHome {
-  font-size: 1rem;
-  color: #000;
+  font-size: fontSize;
+  color: color;
   font-weight: normal;
+  line-height: 1.5rem;
 }
 .seccionHome .imgCal {
   width: 300px;
@@ -116,7 +114,9 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
 }
 
 .textoQuienesSomos {
-  font-size: 1rem;
+  font-size: fontSize;
+  color: color;
+  font-weight: normal;
   line-height: 1.5rem;
 }
 
@@ -127,6 +127,14 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
 
 .fichaVehiculo {
   padding-top: 20px;
+}
+
+.textoVehiculos {
+  font-size: fontSize;
+  color: color;
+  font-weight: normal;
+  line-height: 1.5rem;
+  padding-left: 50px;
 }
 
 .terminosCondiciones {
@@ -144,18 +152,11 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
   font-size: 0.9rem;
 }
 
-.textoVehiculos {
-  grid-area: textoVehiculos;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-left: 50px;
-}
-
 .textoSucursales {
-  grid-area: textoSucursales;
-  font-size: 1rem;
-  color: #000;
+  font-size: fontSize;
+  color: color;
   font-weight: normal;
+  line-height: 1.5rem;
   padding-left: 50px;
 }
 
@@ -178,7 +179,10 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
 }
 
 .textoContactenos {
-  font-size: 1rem;
+  font-size: fontSize;
+  color: color;
+  font-weight: normal;
+  line-height: 1.5rem;
 }
 
 .fotoContactenos {
@@ -194,6 +198,32 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
 /*#region PARA PARA EL RESPONSIVE MOBILE  ---------------------------------------------------- */
 /* Responsive para Mobile */
 @media only screen and (max-width: 768px) {
+  body .tituloSeccion {
+    font-size: 1rem;
+    color: #ff6600;
+    font-weight: bold;
+  }
+  body .iconoSeccion {
+    width: 25px;
+  }
+  body .footer {
+    /*Estilos para PIE DE PAGINA*/
+  }
+  body .footer .seccionFooter {
+    background-color: #e0e3e4;
+  }
+  body .footer .imgPiePagina {
+    margin-right: 5px;
+    width: 15px;
+  }
+  body .footer .tituloPie {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: bold;
+  }
+  body .footer .contenidoPie {
+    font-size: 0.8rem;
+  }
   header .navbar .logo {
     padding-left: 0px;
     width: 150px;
@@ -204,25 +234,23 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
   header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
     width: 20px;
   }
-  .tituloSeccion {
-    font-size: 1rem;
+  /* Seccion de Home*/
+  .seccionHome {
+    /* Seccion de Calidad*/
   }
-  .iconoSeccion {
-    width: 25px;
-  }
-  /* Seccion de Vehiculos Destacados*/
-  .iconoHome {
+  .seccionHome .iconoHome {
     width: 15px;
     vertical-align: middle;
   }
-  .tituloHome {
+  .seccionHome .tituloHome {
     font-size: 1rem;
+    color: #ff6600;
+    font-weight: bold;
   }
-  .textoHome {
+  .seccionHome .textoHome {
     font-size: 0.8rem;
   }
-  /* Seccion de Calidad*/
-  .imgCal {
+  .seccionHome .imgCal {
     width: 150px;
     padding-bottom: 15px;
   }
@@ -281,21 +309,6 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
   }
   .formContacto {
     width: 100%;
-  }
-  /*Estilos para PIE DE PAGINA*/
-  .seccionFooter {
-    background-color: #e0e3e4;
-  }
-  .imgPiePagina {
-    margin-right: 5px;
-    width: 15px;
-  }
-  .tituloPie {
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-  .contenidoPie {
-    font-size: 0.8rem;
   }
   .copyright {
     font-size: 0.5rem;

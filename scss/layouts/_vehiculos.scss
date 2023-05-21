@@ -2,6 +2,11 @@
   padding-top: 20px;
 }
 
+.textoVehiculos {
+  @include funcTextoSeccion(1rem, $colorNegro);
+  padding-left: 50px;
+}
+
 .terminosCondiciones {
   font-size: 0.9rem;
 }
@@ -15,11 +20,4 @@
 .datosVehiculo {
   color: $colorNegro;
   font-size: 0.9rem;
-}
-
-.textoVehiculos {
-  grid-area: textoVehiculos;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-left: 50px;
 }

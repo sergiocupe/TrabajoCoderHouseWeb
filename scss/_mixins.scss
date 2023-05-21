@@ -1,0 +1,14 @@
+@mixin funcTitulo($fontSize,$color)
+{
+    font-size: $fontSize;
+    color: $color;
+    font-weight: bold;
+}
+
+@mixin funcTextoSeccion($fontSize,$color)
+{
+    font-size: fontSize;
+    color: color;
+    font-weight: normal;
+    line-height: 1.5rem;
+}

@@ -2,6 +2,32 @@
 /*#region PARA PARA EL RESPONSIVE MOBILE  ---------------------------------------------------- */
 /* Responsive para Mobile */
 @media only screen and (max-width: $widthMedia) {
+  body {
+    .tituloSeccion {
+      @include funcTitulo(1rem, $colorNaranja);
+    }
+    .iconoSeccion {
+      width: 25px;
+    }
+
+    .footer {
+      /*Estilos para PIE DE PAGINA*/
+      .seccionFooter {
+        background-color: $colorGris;
+      }
+      .imgPiePagina {
+        margin-right: 5px;
+        width: 15px;
+      }
+      .tituloPie {
+        @include funcTitulo(0.8rem, $colorNegro);
+      }
+      .contenidoPie {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
   header {
     .navbar {
       .logo {
@@ -22,27 +48,24 @@
       }
     }
   }
-  .tituloSeccion {
-    font-size: 1rem;
-  }
-  .iconoSeccion {
-    width: 25px;
-  }
-  /* Seccion de Vehiculos Destacados*/
-  .iconoHome {
-    width: 15px;
-    vertical-align: middle;
-  }
-  .tituloHome {
-    font-size: 1rem;
-  }
-  .textoHome {
-    font-size: 0.8rem;
-  }
-  /* Seccion de Calidad*/
-  .imgCal {
-    width: 150px;
-    padding-bottom: 15px;
+
+  /* Seccion de Home*/
+  .seccionHome {
+    .iconoHome {
+      width: 15px;
+      vertical-align: middle;
+    }
+    .tituloHome {
+      @include funcTitulo(1rem, $colorNaranja);
+    }
+    .textoHome {
+      font-size: 0.8rem;
+    }
+    /* Seccion de Calidad*/
+    .imgCal {
+      width: 150px;
+      padding-bottom: 15px;
+    }
   }
   /* Estilos para la tabla de vehiculos*/
   .precioVehiculo {
@@ -59,11 +82,11 @@
     padding-top: 10px;
     font-size: 0.8rem;
   }
-    
+
   .fotoNosotros {
     width: 250px;
   }
-  
+
   /*#Estilos para Vehiculos ---------------------------------------------------- */
   .textoVehiculos {
     font-size: 0.8rem;
@@ -101,21 +124,6 @@
   }
   .formContacto {
     width: 100%;
-  }
-  /*Estilos para PIE DE PAGINA*/
-  .seccionFooter {
-    background-color: $colorGris;
-  }
-  .imgPiePagina {
-    margin-right: 5px;
-    width: 15px;
-  }
-  .tituloPie {
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-  .contenidoPie {
-    font-size: 0.8rem;
   }
   .copyright {
     font-size: 0.5rem;

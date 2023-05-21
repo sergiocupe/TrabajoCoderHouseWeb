@@ -5,15 +5,10 @@
   }
 
   .tituloHome {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $colorNaranja;
+    @include funcTitulo(1.5rem, $colorNaranja);
   }
-
   .textoHome {
-    font-size: 1rem;
-    color: #000;
-    font-weight: normal;
+    @include funcTextoSeccion(1rem, $colorNegro);
   }
 
   .imgCal {

@@ -1,25 +1,22 @@
 .textoSucursales {
-    grid-area: textoSucursales;
-    font-size: 1rem;
-    color: $colorNegro;
-    font-weight: normal;
-    padding-left: 50px;
-  }
-  
-  .fichaSucursales {
-    padding-top: 20px;
-  }
-  
-  .mapaSucursales {
-    width: 100%;
-    height: 250px;
-  }
-  
-  .tituloSucursal {
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-  
-  .descripcionSucursal {
-    font-size: 0.9rem;
-  }
+  @include funcTextoSeccion(1rem, $colorNegro);
+  padding-left: 50px;
+}
+
+.fichaSucursales {
+  padding-top: 20px;
+}
+
+.mapaSucursales {
+  width: 100%;
+  height: 250px;
+}
+
+.tituloSucursal {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.descripcionSucursal {
+  font-size: 0.9rem;
+}
