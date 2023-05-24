@@ -89,6 +89,12 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
   padding: 20px;
 }
 
+.seccionHome div h1 {
+  text-align: center;
+  position: relative;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
 .seccionHome .iconoHome {
   width: 25px;
   vertical-align: middle;
