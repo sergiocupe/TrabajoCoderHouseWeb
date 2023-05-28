@@ -25,7 +25,7 @@ body {
 
   .tituloSeccion {
     @include funcTitulo(1.5rem,$colorNaranja);
-    padding-left: 50px;
+    padding-left: 20px;
   }
 
   .iconoSeccion {
