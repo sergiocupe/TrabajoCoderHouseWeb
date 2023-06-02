@@ -128,5 +128,22 @@
   .copyright {
     font-size: 0.5rem;
   }
+  /*#endregion*/
+
+  /*Estilo para la pagina 404*/
+  .seccion404 {
+    height: 300px;
+    div {
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  /*#endregion*/
 }
-/*#endregion*/
