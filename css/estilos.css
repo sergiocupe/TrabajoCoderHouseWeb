@@ -143,6 +143,10 @@ header .navbar .itemMenuImgNav .linkImgMenu .imgRedes {
   padding-left: 50px;
 }
 
+.marcaVehiculo {
+  font-weight: bold;
+}
+
 .terminosCondiciones {
   font-size: 0.9rem;
 }
